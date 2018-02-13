@@ -16,7 +16,7 @@ export class DataBindingComponent implements OnInit {
   valorSalvo:string = "";
   isMouseOver:boolean = false;
   nomeCurso:string = 'Angular';
-
+  valorInicial =15;
 
   constructor() { }
 
@@ -43,6 +43,10 @@ export class DataBindingComponent implements OnInit {
   }
 
   ngOnInit() {
+  }
+
+  onMudouValor(evento){
+    console.log(evento.novoValor);
   }
 
 }
